@@ -61,10 +61,6 @@ class Searching:
         self.frame1.grid_propagate(0)
         self.frame1.pack(side=LEFT)
 
-        # Algorithm Information Table
-        # self.information = {'Linear Search': "Worst Case:O(n)\nAverage Case:O(n/2)\nBest Case:O(1)",
-        #                     'Binary Search': "Worst Case:O(log n)\nAverage Case:O(log n)\nBest Case:O(1)"}
-
         # Algorithm Names
         self.algorithm = ['Linear Search', 'Binary Search']
 

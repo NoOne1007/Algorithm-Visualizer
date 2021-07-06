@@ -78,6 +78,7 @@ class Sorting:
 
         # Creating a drop down menu for algorithm selection
         self.algo_var = StringVar()
+        
         # Setting it default value to what we selected previously in the main window
         self.algo_var.set(self.AlgoNameVar)
         self.algo_menu = OptionMenu(self.frame1, self.algo_var, *self.algorithm, command=self.case_chooser)
@@ -86,6 +87,7 @@ class Sorting:
         self.algo_menu["padx"] = 20
         self.algo_menu["pady"] = 8
         self.algo_menu.grid_propagate(0)
+        
         # Place for the dropdown menu
         self.algo_menu.place(rely=0.1, relx=0.5, anchor=CENTER)
  
@@ -94,9 +96,11 @@ class Sorting:
         self.frame_btn1 = Frame(self.frame1, width=230, height=40, bg="gray")
         self.frame_btn1.grid_propagate(0)
         self.frame_btn1.place(relx=0.05, rely=0.2)
+        
         # Button for generating new array
         self.btn_new = Button(self.frame_btn1, text="Generate", padx=13, pady=3, command=self.new_list, bg="RoyalBlue3", fg="azure", cursor="hand2")
         self.btn_new.place(relx=0.12, rely=0.1)
+        
         # Button for shuffling the array
         self.btn_shuffle = Button(self.frame_btn1, text="Shuffle", padx=13, pady=3, command=self.shuffle_list, bg="RoyalBlue3", fg="azure", cursor="hand2")
         self.btn_shuffle.place(relx=0.60, rely=0.1)
